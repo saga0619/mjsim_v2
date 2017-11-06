@@ -102,7 +102,7 @@ Vector3d rotationMatrixToEulerAngles(Matrix3d &R)
 
 
 
-void part::name(mjModel *m, mjData *d, char *part_name) {
+void jh_controller::part::name(mjModel *m, mjData *d, char *part_name) {
 	part_id = mj_name2id(m, mjOBJ_BODY, part_name);
 	Jac_point.resize(6, m->nv);
 	Jac_point.setZero();
@@ -121,11 +121,13 @@ void part::name(mjModel *m, mjData *d, char *part_name) {
 	m_int = m;
 	d_int = d;
 
+	inertia.setZero(3, 3);
 
+	di.setZero(3, 3);
 
 }
 
-void part::refresh() {
+void jh_controller::part::refresh() {
 
 	
 
@@ -148,15 +150,40 @@ void part::refresh() {
 			Rotm(i, j) = d_int->xmat[part_id * 9 + i + j * 3];
 		}
 	}
+	
+	Quaterniond q;
+	q.w() = m_int->body_iquat[part_id * 4];
+	q.x() = m_int->body_iquat[part_id * 4 + 1];
+	q.y() = m_int->body_iquat[part_id * 4 + 2];
+	q.z() = m_int->body_iquat[part_id * 4 + 3];
+	i_rot = q.normalized().toRotationMatrix();
+	
+
 
 	
+
+	di(0, 0) = m_int->body_inertia[part_id * 3];
+	di(1, 1) = m_int->body_inertia[part_id * 3+1];
+	di(2, 2) = m_int->body_inertia[part_id * 3+2];
+
+	inertia = i_rot* di * i_rot.transpose();
+
+	
+
+	
+
+	Jac = Jac*Rotation2g;
+	Jac_COM = Jac_COM*Rotation2g;
+
+
+
 
 
 
 
 }
 
-void part::SetContact(Vector3d contact_vector) {
+void jh_controller::part::SetContact(Vector3d contact_vector) {
 	Vector3d con_pos;
 	mjtNum* jac_r_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
 	mjtNum* jac_p_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
@@ -172,9 +199,11 @@ void part::SetContact(Vector3d contact_vector) {
 	Jac_Contact.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
 	Jac_Contact.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
 
+	Jac_Contact = Jac_Contact*Rotation2g;
+
 
 }
-void part::SetContact(double x, double y,double z) {
+void jh_controller::part::SetContact(double x, double y,double z) {
 	Vector3d con_pos,contact_vector;
 	contact_vector << x, y, z;
 	mjtNum* jac_r_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
@@ -191,9 +220,48 @@ void part::SetContact(double x, double y,double z) {
 	Jac_Contact.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
 	Jac_Contact.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
 
+	Jac_Contact = Jac_Contact*Rotation2g;
 
 }
+void jh_controller::part::SetPoint(double x, double y, double z) {
+	Vector3d con_pos, contact_vector;
+	contact_vector << x, y, z;
+	mjtNum* jac_r_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
+	mjtNum* jac_p_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
+	con_pos = xpos + Rotm*contact_vector;
 
+	mjtNum con_pos_mj[3];
+	con_pos_mj[0] = con_pos[0];
+	con_pos_mj[1] = con_pos[1];
+	con_pos_mj[2] = con_pos[2];
 
-part::part() {
+	mj_jac(m_int, d_int, jac_p_temp, jac_r_temp, con_pos_mj, part_id);
+
+	Jac_point.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
+	Jac_point.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
+
+	Jac_point = Jac_point*Rotation2g;
+
+}
+void jh_controller::part::SetPoint(Vector3d point_vector) {
+
+	Vector3d con_pos;
+	mjtNum* jac_r_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
+	mjtNum* jac_p_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
+	con_pos = xpos + Rotm*point_vector;
+
+	mjtNum con_pos_mj[3];
+	con_pos_mj[0] = con_pos[0];
+	con_pos_mj[1] = con_pos[1];
+	con_pos_mj[2] = con_pos[2];
+
+	mj_jac(m_int, d_int, jac_p_temp, jac_r_temp, con_pos_mj, part_id);
+
+	Jac_point.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
+	Jac_point.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
+
+	Jac_point = Jac_point*Rotation2g;
+}
+
+jh_controller::part::part() {
 }

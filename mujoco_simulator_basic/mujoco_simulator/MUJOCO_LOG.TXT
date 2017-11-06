@@ -2812,3 +2812,9 @@ WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time 
 Fri Nov  3 17:20:23 2017
 WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0090.
 
+Mon Nov  6 20:46:25 2017
+WARNING: Unknown warning type Time = 1.3430.
+
+Mon Nov  6 20:46:30 2017
+WARNING: Unknown warning type Time = 0.0000.
+

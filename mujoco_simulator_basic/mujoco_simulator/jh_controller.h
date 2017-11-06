@@ -16,41 +16,9 @@ extern char data_print_data[1000];
 extern char data_print_title[1000];
 
 
-class part {
-public:
-	part();
-	void name(mjModel *m, mjData *d, char *part_name);
-	void refresh();
-	void SetContact(Vector3d contact_vector);
-	void SetContact(double x, double y, double z);
-
-	MatrixXd Rotm;
-
-	MatrixXd Jac_point;
-
-	MatrixXd Jac;
-
-	MatrixXd Jac_COM;
-
-	MatrixXd Jac_Contact;
-
-	double Mass;
-
-	/*! @Cartesian position of body frame
-	*/
-	Vector3d xpos;
-
-	/*! @Cartesian position of body COM
-	*/
-	Vector3d xipos;
 
 
-private:
-	int part_id;
-	mjData *d_int;
-	mjModel *m_int;
 
-};
 
 
 
@@ -59,7 +27,58 @@ class jh_controller
 public:
 	jh_controller();
 	~jh_controller();
-	
+
+
+
+	class part {
+	public:
+		part();
+		void name(mjModel *m, mjData *d, char *part_name);
+		void refresh();
+		void SetContact(Vector3d contact_vector);
+		void SetContact(double x, double y, double z);
+		void SetPoint(Vector3d contact_vector);
+		void SetPoint(double x, double y, double z);
+
+		MatrixXd Rotm;
+
+		MatrixXd Jac_point;
+
+		MatrixXd Jac;
+
+		MatrixXd Jac_COM;
+
+		MatrixXd Jac_Contact;
+
+		double Mass;
+
+		MatrixXd inertia;
+
+		/*! @Cartesian position of body frame
+		*/
+		Vector3d xpos;
+
+		/*! @Cartesian position of body COM
+		*/
+		Vector3d xipos;
+
+		Matrix3d di;
+		Matrix3d i_rot;
+
+
+	private:
+		int part_id;
+		mjData *d_int;
+		mjModel *m_int;
+
+	};
+
+
+
+
+
+
+
 
 	/*! @initialize jh_controller
 	*  initialize variables of controller
@@ -87,7 +106,8 @@ private:
 	
 
 
-
+	static Matrix3d Rotation_base_frame;
+	static MatrixXd Rotation2g;
 
 	
 	
@@ -101,9 +121,6 @@ private:
 
 	VectorXd torque;
 	mjtNum* torque_mj;
-
-
-	int ee_id;
 
 	Matrix3d Rot_init;
 	Vector3d x_init;
