@@ -388,7 +388,7 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 	torque_grav = (J_g*A_matrix.inverse()*N_C*J_g.transpose()).inverse()*J_g*A_matrix.inverse()*N_C*G;
 
 	if(d->time>1.0)
-	{l
+	{
 		for (static bool first = true; first; first = false)
 		{
 			
