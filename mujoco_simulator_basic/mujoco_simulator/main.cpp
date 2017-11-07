@@ -1079,10 +1079,10 @@ void simulation(void)
 				mjv_applyPerturbPose(m, d, &pert, 0);  // move mocap bodies only
 				mjv_applyPerturbForce(m, d, &pert);
 			}
-			obj.simulation(m,d);
+			
 			// run mj_step and count
 			mj_step(m, d);
-
+			obj.simulation(m, d);
 			// break on reset
 			if (d->time<startsimtm)
 				break;

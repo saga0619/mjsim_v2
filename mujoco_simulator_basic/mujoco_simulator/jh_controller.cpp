@@ -237,10 +237,10 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 	//1. Base frame Rotation matrix Setting // 
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
-			Rotation_base_frame(i, j) = d->xmat[mj_name2id(m, mjOBJ_BODY, "Pelvis") * 9 + i + j * 3];
+			Rotation_base_frame(i, j) = d->xmat[mj_name2id(m, mjOBJ_BODY, "Pelvis") * 9 + i*3+ j];
 		}
 	}	
-	Rotation2g.block(3, 3, 3, 3) = Rotation_base_frame;
+	Rotation2g.block(3, 3, 3, 3) = Rotation_base_frame.transpose();
 
 	//------------------------------------------//
 
@@ -338,7 +338,7 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 
 	//data_print_data -> 시뮬레이션 창에 띄우는 데이터. 
-	sprintf_s(data_print_data, "%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f", mystery(0), mystery(1), mystery(2), mystery(3), mystery(4), mystery(5), d->qvel[0], d->qvel[1], d->qvel[2], d->qvel[3], d->qvel[4], d->qvel[5]);
+	sprintf_s(data_print_data, "%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f", mystery(0), mystery(1), mystery(2), mystery(3), mystery(4), mystery(5), d->qvel[0], d->qvel[1], d->qvel[2], d->qvel[3], d->qvel[4], d->qvel[5], A.determinant());
 	
 	Vector3d Grav_ref;
 	Grav_ref << 0, 0, -9.81;
@@ -346,12 +346,12 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 	G.setZero(m->nv);
 
 	for (int i = 0; i < 6; i++) {
-		G = G + pR[i].Mass*pR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
-		G = G + pL[i].Mass*pL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
+		G = G + pR[i].Mass*pR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref
+		 + pL[i].Mass*pL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
 	}
 	for (int i = 0; i < 7; i++) {
-		G = G + pUR[i].Mass*pUR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
-		G = G + pUL[i].Mass*pUL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
+		G = G + pUR[i].Mass*pUR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref
+		+ pUL[i].Mass*pUL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
 	}
 	for (int i = 0; i < 3; i++) {
 		G = G + pBase[i].Mass*pBase[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
@@ -374,6 +374,8 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 	J_C_INV_T = Lambda_c*J_C*A_matrix.inverse();
 
+
+	
 
 	MatrixXd N_C;
 	N_C.setIdentity(m->nv, m->nv);
@@ -418,10 +420,10 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			cout << "grav_matrix :" << endl;
 			cout << G << endl;
 			cout << " J_g : " << endl;
-			cout << "A_matrix :" << endl;
-			cout << A_matrix << endl;
 			cout << "A :" << endl;
 			cout << A << endl;
+			cout << "A_inv :" << endl;
+			cout << A.inverse() << endl;
 			cout << J_g << endl;
 			cout << " J_C" << endl;
 			cout << J_C << endl;
