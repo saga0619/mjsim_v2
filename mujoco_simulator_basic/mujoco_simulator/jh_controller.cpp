@@ -59,18 +59,13 @@ void jh_controller::init(mjModel *m, mjData *d) {
 
 
 
-	//Part Contact Setting
-	pR[5].SetContact(0, 0, -0.1);
-	pL[5].SetContact(0, 0, -0.1);
-
-
 
 
 	torque_eigen.resize(6);
 	torque_eigen.setZero();
 
 
-
+	initializer = true;
 
 	strcpy_s(data_print_title, "JH Controller\nData Print Test");
 	std::cout << "Controller Initialize Complete" << std::endl;
@@ -80,6 +75,7 @@ void jh_controller::init(mjModel *m, mjData *d) {
 void jh_controller::simulation(mjModel *m, mjData *d) {
 	mjMARKSTACK
 		//controller starts		
+
 
 	/*
 	mjtNum* jac_p = mj_stackAlloc(d, 6 * m->nv);
@@ -225,14 +221,12 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 
 	*/
-
-	for (static bool first = true; first; first = false)
-	{
+	if(initializer){
 		cout << "Simulation Start" << endl;
-		// some code that executes only once
+	// some code that executes only once
+		initializer = !initializer;
+	cout << "dnq : " << m->nq << endl;
 	}
-
-
 
 	//1. Base frame Rotation matrix Setting // 
 	for (int i = 0; i < 3; i++) {
@@ -260,8 +254,12 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 	for (int i = 0; i < 3; i++) {
 		pBase[i].refresh();
 	}
+
+	//Part Contact Setting
+	pR[5].SetContact(0, 0, -0.1);
+	pL[5].SetContact(0, 0, -0.1);
+
 	//------------------------------------------//
-	
 
 
 	//3. Mass matrix setting // 
@@ -271,12 +269,12 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 	A_matrix.setZero(m->nv, m->nv);
 	for (int i = 0; i < m->nv; i++) {
 		for (int j = 0; j < m->nv; j++) {
-			A_matrix(i, j) = _qM[i * 6 + j];
+			A_matrix(i, j) = _qM[i * m->nv + j];
 		}
 	}
 
 	A_matrix = Rotation2g.transpose() *A_matrix * Rotation2g;
-
+	/*
 	MatrixXd A1[6],A2[7],A3[3];
 	
 	
@@ -286,35 +284,34 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 	for (int i = 0; i < 6; i++) {
 		A1[i].setZero(m->nv, m->nv);
-		A1[i] = pR[i].Mass*(pR[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pR[i].Jac_COM.block(0, 0, 3, m->nv)
-			+ pR[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pR[i].inertia*pR[i].Jac_COM.block(3, 0, 3, m->nv)
-			+ pL[i].Mass*(pL[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pL[i].Jac_COM.block(0, 0, 3, m->nv)
-			+ pL[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pL[i].inertia*pL[i].Jac_COM.block(3, 0, 3, m->nv);
+		A1[i] = pR[i].Mass*(pR[i].Jac_COM_p).transpose()*pR[i].Jac_COM_p
+			+ pR[i].Jac_COM_r.transpose()*pR[i].Rotm*pR[i].inertia*pR[i].Rotm.transpose()*pR[i].Jac_COM_r
+			+ pL[i].Mass*(pL[i].Jac_COM_p).transpose()*pL[i].Jac_COM_p
+			+ pL[i].Jac_COM_r.transpose()*pL[i].Rotm*pL[i].inertia*pL[i].Rotm.transpose()*pL[i].Jac_COM_r;
 
 	}
 	for (int i = 0; i < 7; i++) {
 		A2[i].setZero(m->nv, m->nv);
-		A2[i] = pUR[i].Mass*(pUR[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pUR[i].Jac_COM.block(0, 0, 3, m->nv)
-			+ pUR[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pUR[i].inertia*pUR[i].Jac_COM.block(3, 0, 3, m->nv)
-			+ pUL[i].Mass*(pUL[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pUL[i].Jac_COM.block(0, 0, 3, m->nv)
-			+ pUL[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pUL[i].inertia*pUL[i].Jac_COM.block(3, 0, 3, m->nv);
+		A2[i] = pUR[i].Mass*(pUR[i].Jac_COM_p).transpose()*pUR[i].Jac_COM_p
+			+ pUR[i].Jac_COM_r.transpose()*pUR[i].Rotm*pUR[i].inertia*pUR[i].Rotm.transpose()*pUR[i].Jac_COM_r
+			+ pUL[i].Mass*(pUL[i].Jac_COM_p).transpose()*pUL[i].Jac_COM_p
+			+ pUL[i].Jac_COM_r.transpose()*pUL[i].Rotm*pUL[i].inertia*pUL[i].Rotm.transpose()*pUL[i].Jac_COM_r;
 	}	
 	for (int i = 0; i < 3; i++) {
 		A3[i].setZero(m->nv, m->nv);
-		A3[i] = pBase[i].Mass*(pBase[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pBase[i].Jac_COM.block(0, 0, 3, m->nv)
-			+ pBase[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pBase[i].inertia*pBase[i].Jac_COM.block(3, 0, 3, m->nv);
+		A3[i] = pBase[i].Mass*(pBase[i].Jac_COM_p).transpose()*pBase[i].Jac_COM_p
+			+ pBase[i].Jac_COM_r.transpose()*pBase[i].Rotm*pBase[i].inertia*pBase[i].Rotm.transpose()*pBase[i].Jac_COM_r;
 	}
 
-	MatrixXd A;
-	A.setZero(m->nv, m->nv);
+
 	A = A1[0] + A1[1] + A1[2] + A1[3] + A1[4] + A1[5]
 		+ A2[0] + A2[1] + A2[2] + A2[3] + A2[4] + A2[5] + A2[6]
 		+ A3[0] + A3[1] + A3[2];
 	A = A*0.5;
-
-
-
-	A_matrix = A;
+	*/
+	MatrixXd A;
+	A.setZero(m->nv, m->nv);
+	A = A_matrix;
 
 
 	//------------------------------------------//
@@ -338,30 +335,47 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 
 	//data_print_data -> 시뮬레이션 창에 띄우는 데이터. 
-	sprintf_s(data_print_data, "%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f", mystery(0), mystery(1), mystery(2), mystery(3), mystery(4), mystery(5), d->qvel[0], d->qvel[1], d->qvel[2], d->qvel[3], d->qvel[4], d->qvel[5], A.determinant());
+	sprintf_s(data_print_data, "%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f%8.3f%8.3f\n%8.3f", mystery(0), mystery(1), mystery(2), mystery(3), mystery(4), mystery(5),  d->qpos[7], d->qpos[8], d->qpos[9], d->qpos[10], d->qpos[11], d->qpos[12], A.determinant());
 	
 	Vector3d Grav_ref;
-	Grav_ref << 0, 0, -9.81;
-	VectorXd G;
+	Grav_ref.setZero(3);
+	Grav_ref(2) = -9.81;
+
+	VectorXd G, Gtemp[16];
 	G.setZero(m->nv);
 
+
+
+
 	for (int i = 0; i < 6; i++) {
-		G = G + pR[i].Mass*pR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref
-		 + pL[i].Mass*pL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
+		Gtemp[i].setZero(m->nv);
+		Gtemp[i] = pR[i].Jac_COM_p.transpose()*pR[i].Mass*Grav_ref
+		 + pL[i].Jac_COM_p.transpose()*pL[i].Mass*Grav_ref;
 	}
 	for (int i = 0; i < 7; i++) {
-		G = G + pUR[i].Mass*pUR[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref
-		+ pUL[i].Mass*pUL[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
+		Gtemp[i+6].setZero(m->nv);
+		Gtemp[i+6]= pUR[i].Jac_COM_p.transpose()*pUR[i].Mass*Grav_ref
+		+ pUL[i].Jac_COM_p.transpose()*pUL[i].Mass*Grav_ref;
 	}
 	for (int i = 0; i < 3; i++) {
-		G = G + pBase[i].Mass*pBase[i].Jac_COM.block(0, 0, 3, m->nv).transpose()*Grav_ref;
+		Gtemp[i + 13].setZero(m->nv);
+		Gtemp[i + 13] =pBase[i].Jac_COM_p.transpose()*pBase[i].Mass*Grav_ref;
 	}
+
+
+	G =- (Gtemp[0] + Gtemp[1] + Gtemp[2] + Gtemp[3] + Gtemp[4] + Gtemp[5] + Gtemp[6] + Gtemp[7] + Gtemp[8] + Gtemp[9] + Gtemp[10] + Gtemp[11] + Gtemp[12] + Gtemp[13] + Gtemp[14] + Gtemp[15]);
+
+
+
+
+
+
+
 
 	MatrixXd J_g;
 	J_g.setZero(m->nu, m->nv);
 	J_g.block(0, 6, m->nu, m->nu).setIdentity();
 	
-
 
 	MatrixXd J_C, J_C_INV_T;
 	J_C.setZero(12, m->nv);
@@ -370,46 +384,45 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 
 	MatrixXd Lambda_c;
-	Lambda_c=(J_C*A_matrix*(J_C.transpose())).inverse();
+	Lambda_c=(J_C*A.inverse()*(J_C.transpose())).inverse();
 
-	J_C_INV_T = Lambda_c*J_C*A_matrix.inverse();
+	J_C_INV_T = Lambda_c*J_C*A.inverse();
 
 
 	
 
 	MatrixXd N_C;
-	N_C.setIdentity(m->nv, m->nv);
-	N_C =N_C-J_C.transpose()*J_C_INV_T;
+	N_C.setZero(m->nv, m->nv);
+	MatrixXd I34;
+	I34.setIdentity(m->nv, m->nv);
+	N_C =I34-J_C.transpose()*J_C_INV_T;
 
 
 
-	VectorXd torque_grav(m->nu);
+	VectorXd torque_grav;	
+	torque_grav.setZero(m->nu);
+	torque_grav = (J_g*A.inverse()*N_C*J_g.transpose()).inverse()*J_g*A.inverse()*N_C*G;
+
 	
-	
-
-	torque_grav = (J_g*A_matrix.inverse()*N_C*J_g.transpose()).inverse()*J_g*A_matrix.inverse()*N_C*G;
-
-	if(d->time>1.0)
-	{
-		for (static bool first = true; first; first = false)
-		{
-			
-
-			// some code that executes only once
-		}
-		
-		// some code that executes only once
-	}
 
 
 	//Control + R, F, T 조합으로 키 명령 
 	if (Control_R) {
+		static int k;
 		if (Control_init) {
 			Control_init = !Control_init;
+		//	cout << " Value between 1~" << m->nu << " choose : " ;
+			//cin >> k;
+		//	cout << k << " act selected !" << endl;
 		}
-		torque = torque_grav;
-		if (d->time > run_command_time + 1.0) {
+		
+
+
+		torque= torque_grav;
+
+		if (d->time > run_command_time +5.0) {
 			Control_R = false;
+			torque.setZero(m->nu);
 		}
 	}
 	else if (Control_F) {
@@ -417,13 +430,14 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			Control_init = !Control_init;
 
 			cout << "gravcheck" << endl;
+			cout << Grav_ref << endl;
 			cout << "grav_matrix :" << endl;
 			cout << G << endl;
-			cout << " J_g : " << endl;
 			cout << "A :" << endl;
 			cout << A << endl;
 			cout << "A_inv :" << endl;
 			cout << A.inverse() << endl;
+			cout << " J_g : " << endl;
 			cout << J_g << endl;
 			cout << " J_C" << endl;
 			cout << J_C << endl;
@@ -434,9 +448,9 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			cout << "N_C" << endl;
 			cout << N_C << endl;
 			cout << "torque grav" << endl;
-			cout << torque_grav;
+			cout << torque_grav << endl;
 			cout << "bonus" << endl;
-			cout << (J_g*A_matrix.inverse()*N_C*J_g.transpose()).inverse()*J_g*A_matrix.inverse()*N_C << endl;
+			cout << (J_g*A.inverse()*N_C*J_g.transpose()).inverse()*J_g*A.inverse()*N_C << endl;
 
 
 		//	cout << "A_matrix" << endl << A_matrix << endl;
@@ -485,16 +499,48 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			std::cout << "pelvis velocity" << std::endl;
 			std::cout << mystery << std::endl << endl;
 			std::cout << "rotation2g" << endl;
+
+			cout << "J pR[5] contact " << endl;
+			cout << pR[5].Jac_Contact << endl;
+
+
+
+
 			cout << Rotation2g << endl;
+			cout << "qpos" << endl;
+			cout << d->qpos[7] << "\t" << d->qpos[8] << "\t" << d->qpos[9] << "\t" << d->qpos[10] << "\t" << d->qpos[11] << "\t" << d->qpos[12] << endl;
+			cout << "qvel " << endl;
+			cout << d->qvel[6] << "\t" << d->qvel[7] << "\t" << d->qvel[8] << "\t" << d->qvel[9] << "\t" << d->qvel[10] << "\t" << d->qvel[11] << endl;
 
 
+			cout << "vector test " << endl;
+			
+			Vector3d test;
+			test << 101, 102, 103;
+			cout << test[0] << "\t " << test[1] << "\t" << test[2] << endl;
+
+
+			cout << "pr5 com jac : " << endl << pR[5].Jac_COM << endl;
+			
+			
+
+
+
+
+
+
+
+
+
+			cout << pR[0].inertia << endl;
+			/*
 
 			for (int i = 0; i < 6; i++) {
 				A1[i].setZero(m->nv, m->nv);
-				A1[i] = pR[i].Mass*(pR[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pR[i].Jac_COM.block(0, 0, 3, m->nv)
-					+ pR[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pR[i].inertia*pR[i].Jac_COM.block(3, 0, 3, m->nv)
-					+ pL[i].Mass*(pL[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pL[i].Jac_COM.block(0, 0, 3, m->nv)
-					+ pL[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pL[i].inertia*pL[i].Jac_COM.block(3, 0, 3, m->nv);
+				A1[i] = pR[i].Mass*(pR[i].Jac_COM_p).transpose()*pR[i].Jac_COM_p
+					+ pR[i].Jac_COM_r.transpose()*pR[i].inertia*pR[i].Jac_COM_r
+					+ pL[i].Mass*(pL[i].Jac_COM_p).transpose()*pL[i].Jac_COM_p
+					+ pL[i].Jac_COM_r.transpose()*pL[i].inertia*pL[i].Jac_COM_r;
 
 
 
@@ -502,16 +548,16 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			}
 			for (int i = 0; i < 7; i++) {
 				A2[i].setZero(m->nv, m->nv);
-				A2[i] = pUR[i].Mass*(pUR[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pUR[i].Jac_COM.block(0, 0, 3, m->nv)
-					+ pUR[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pUR[i].inertia*pUR[i].Jac_COM.block(3, 0, 3, m->nv)
-					+ pUL[i].Mass*(pUL[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pUL[i].Jac_COM.block(0, 0, 3, m->nv)
-					+ pUL[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pUL[i].inertia*pUL[i].Jac_COM.block(3, 0, 3, m->nv);
+				A2[i] = pUR[i].Mass*(pUR[i].Jac_COM_p).transpose()*pUR[i].Jac_COM_p
+					+ pUR[i].Jac_COM_r.transpose()*pUR[i].inertia*pUR[i].Jac_COM_r
+					+ pUL[i].Mass*(pUL[i].Jac_COM_p).transpose()*pUL[i].Jac_COM_p
+					+ pUL[i].Jac_COM_r.transpose()*pUL[i].inertia*pUL[i].Jac_COM_r;
 				cout << endl << "A2[" << i << "] : " << endl << A2[i] << endl << endl << endl;
 			}
 			for (int i = 0; i < 3; i++) {
 				A3[i].setZero(m->nv, m->nv);
-				A3[i] = pBase[i].Mass*(pBase[i].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pBase[i].Jac_COM.block(0, 0, 3, m->nv)
-					+ pBase[i].Jac_COM.block(3, 0, 3, m->nv).transpose()*pBase[i].inertia*pBase[i].Jac_COM.block(3, 0, 3, m->nv);
+				A3[i] = pBase[i].Mass*(pBase[i].Jac_COM_p).transpose()*pBase[i].Jac_COM_p
+					+ pBase[i].Jac_COM_r.transpose()*pBase[i].inertia*pBase[i].Jac_COM_r;
 				cout << endl << "A3[" << i << "] : " << endl << A3[i] << endl << endl << endl;
 			}
 
@@ -522,19 +568,19 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 			int h;
 			cin >> h;
 			A1[h].setZero(m->nv, m->nv);
-			A1[h] = pR[h].Mass*(pR[h].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pR[h].Jac_COM.block(0, 0, 3, m->nv)
-				+ pR[h].Jac_COM.block(3, 0, 3, m->nv).transpose()*pR[h].inertia*pR[h].Jac_COM.block(3, 0, 3, m->nv)
-				+ pL[h].Mass*(pL[h].Jac_COM.block(0, 0, 3, m->nv)).transpose()*pL[h].Jac_COM.block(0, 0, 3, m->nv)
-				+ pL[h].Jac_COM.block(3, 0, 3, m->nv).transpose()*pL[h].inertia*pL[h].Jac_COM.block(3, 0, 3, m->nv);
+			A1[h] = pR[h].Mass*(pR[h].Jac_COM_p).transpose()*pR[h].Jac_COM_p
+				+ pR[h].Jac_COM_r.transpose()*pR[h].inertia*pR[h].Jac_COM_r
+				+ pL[h].Mass*(pL[h].Jac_COM_p).transpose()*pL[h].Jac_COM_p
+				+ pL[h].Jac_COM_r.transpose()*pL[h].inertia*pL[h].Jac_COM_r;
 
 			
 			cout << endl << "R  Mass : " <<pR[h].Mass << endl;
 			cout << endl << "all jacobian :" << endl;
 			cout << pR[h].Jac_COM << endl;
 			cout << endl << "R jac pos :" << endl;
-			cout << pR[h].Jac_COM.block(0, 0, 3, m->nv) << endl;
+			cout << pR[h].Jac_COM_p << endl;
 			cout << endl << "R jac rot :" << endl;
-			cout << pR[h].Jac_COM.block(3, 0, 3, m->nv) << endl;
+			cout << pR[h].Jac_COM_r << endl;
 			cout << endl << "R inertia :" << endl;
 			cout << pR[h].inertia << endl;
 
@@ -543,7 +589,7 @@ void jh_controller::simulation(mjModel *m, mjData *d) {
 
 			cout << "//-----------------------------END-------------------------------- //" << endl;
 		
-
+		*/
 
 		}
 		Control_T = !Control_T;

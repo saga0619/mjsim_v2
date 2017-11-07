@@ -2872,3 +2872,1611 @@ WARNING: Unknown warning type Time = 0.0020.
 Tue Nov  7 10:08:12 2017
 WARNING: Unknown warning type Time = 0.0020.
 
+Tue Nov  7 10:57:33 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Tue Nov  7 11:01:26 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 11. The simulation is unstable. Time = 0.0060.
+
+Tue Nov  7 11:29:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 11:29:46 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 11:29:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:29:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:14 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:14 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:19 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:22 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:22 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:34 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:35 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:35 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:38 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:39 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:39 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:40 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:40 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:41 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:41 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:42 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:42 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:43 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:43 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:44 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:45 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:45 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:30:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:14 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:22 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:22 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:31:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:32:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 11:32:25 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 11:38:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 11:38:27 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 11:38:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:34 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:34 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:35 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:35 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:38 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:43 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:38:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:39:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:39:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:39:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:39:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0470.
+
+Tue Nov  7 11:39:48 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.0470.
+
+Tue Nov  7 11:47:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 11:47:23 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 11:47:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 11:47:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 13:34:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 1.3770.
+
+Tue Nov  7 14:27:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 14:27:27 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 14:27:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:34 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:27:38 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.4380.
+
+Tue Nov  7 14:38:54 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.4380.
+
+Tue Nov  7 14:38:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:38:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 14:39:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.5100.
+
+Tue Nov  7 16:13:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 6.6280.
+
+Tue Nov  7 16:13:16 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 6.6290.
+
+Tue Nov  7 16:15:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 5.8490.
+
+Tue Nov  7 16:15:46 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 1. The simulation is unstable. Time = 5.8500.
+
+Tue Nov  7 16:15:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:15:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.0340.
+
+Tue Nov  7 16:21:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 5.4340.
+
+Tue Nov  7 16:21:51 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 31. The simulation is unstable. Time = 5.4340.
+
+Tue Nov  7 16:21:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:21:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:21:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:21:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:21:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:21:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:22:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:23:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 75.2740.
+
+Tue Nov  7 16:23:40 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 32. The simulation is unstable. Time = 75.2750.
+
+Tue Nov  7 16:23:41 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:23:42 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:23:43 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:24:16 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 23. The simulation is unstable. Time = 6.6030.
+
+Tue Nov  7 16:24:17 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:24:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:24:19 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:24:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:24:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:24:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:25:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 3.8610.
+
+Tue Nov  7 16:25:36 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 3.8630.
+
+Tue Nov  7 16:26:18 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 1.4540.
+
+Tue Nov  7 16:26:51 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:26:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:26:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:00 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:01 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:03 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:14 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:16 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:19 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:28 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:29 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:30 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:31 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:34 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:35 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:36 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:37 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:38 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:39 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:40 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:40 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:41 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:42 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:43 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:44 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:44 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:45 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:46 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:47 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:49 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:50 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:51 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:53 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:54 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:55 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:56 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:57 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:58 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:27:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:29:43 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:29:44 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:03 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:30:04 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:07 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:08 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:10 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:11 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:13 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:14 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:30:15 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:35:05 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:35:06 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:17 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.6550.
+
+Tue Nov  7 16:46:18 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:19 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:20 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:21 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:22 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:23 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:24 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:25 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:26 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:27 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:33 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:40 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:52 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:46:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:47:05 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:47:12 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:47:19 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:52:48 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:53:02 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+
+Tue Nov  7 16:53:09 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
+

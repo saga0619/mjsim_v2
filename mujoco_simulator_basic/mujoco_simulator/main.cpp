@@ -551,8 +551,8 @@ void loadmodel(GLFWwindow* window, const char* filename)
 	if (window && m->names)
 		glfwSetWindowTitle(window, m->names);
 
+	
 	obj.init(m, d);
-
 }
 
 
@@ -1070,22 +1070,28 @@ void simulation(void)
 
 		// advance effective simulation time by 1/refreshrate
 		mjtNum startsimtm = d->time;
-		while ((d->time - startsimtm)*factor<1.0 / refreshrate)
+		while ((d->time - startsimtm)*factor < 1.0 / refreshrate)
 		{
 			// clear old perturbations, apply new
 			mju_zero(d->xfrc_applied, 6 * m->nbody);
-			if (pert.select>0)
+			if (pert.select > 0)
 			{
 				mjv_applyPerturbPose(m, d, &pert, 0);  // move mocap bodies only
 				mjv_applyPerturbForce(m, d, &pert);
 			}
-			
+
 			// run mj_step and count
 			mj_step(m, d);
+
+
+
 			obj.simulation(m, d);
 			// break on reset
-			if (d->time<startsimtm)
-				break;
+			if (d->time < startsimtm) {
+
+			obj.init(m, d);
+			break;
+			}
 		}
 	}
 }

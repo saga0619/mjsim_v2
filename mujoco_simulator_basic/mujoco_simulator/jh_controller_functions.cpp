@@ -170,12 +170,17 @@ void jh_controller::part::refresh() {
 
 	
 
-	
+	MatrixXd jtemp;
+	jtemp.setZero(6, m_int->nv);
+	jtemp = Jac*Rotation2g;
+	Jac = jtemp;
 
-	Jac = Jac*Rotation2g;
-	Jac_COM = Jac_COM*Rotation2g;
+	jtemp = Jac_COM*Rotation2g;
+	Jac_COM = jtemp;
 
 
+	Jac_COM_p = Jac_COM.block(0, 0, 3, m_int->nv);
+	Jac_COM_r = Jac_COM.block(3, 0, 3, m_int->nv);
 
 
 
@@ -194,13 +199,18 @@ void jh_controller::part::SetContact(Vector3d contact_vector) {
 	con_pos_mj[1] = con_pos[1];
 	con_pos_mj[2] = con_pos[2];
 
+	
+
 	mj_jac(m_int, d_int, jac_p_temp, jac_r_temp, con_pos_mj, part_id);
 
 	Jac_Contact.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
 	Jac_Contact.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
+	
+	MatrixXd jtemp;
+	jtemp.setZero(6, m_int->nv);
 
-	Jac_Contact = Jac_Contact*Rotation2g;
-
+	jtemp= Jac_Contact*Rotation2g;
+	Jac_Contact = jtemp;
 
 }
 void jh_controller::part::SetContact(double x, double y,double z) {
@@ -210,10 +220,13 @@ void jh_controller::part::SetContact(double x, double y,double z) {
 	mjtNum* jac_p_temp = mj_stackAlloc(d_int, 3 * m_int->nv);
 	con_pos = xpos + Rotm*contact_vector;
 
+
+	
+
 	mjtNum con_pos_mj[3];
-	con_pos_mj[0] = con_pos[0];
-	con_pos_mj[1] = con_pos[1];
-	con_pos_mj[2] = con_pos[2];
+	con_pos_mj[0] = con_pos(0);
+	con_pos_mj[1] = con_pos(1);
+	con_pos_mj[2] = con_pos(2);
 
 	mj_jac(m_int, d_int, jac_p_temp, jac_r_temp, con_pos_mj, part_id);
 
@@ -240,7 +253,11 @@ void jh_controller::part::SetPoint(double x, double y, double z) {
 	Jac_point.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
 	Jac_point.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
 
-	Jac_point = Jac_point*Rotation2g;
+	MatrixXd jtemp;
+	jtemp.setZero(6, m_int->nv);
+
+	jtemp = Jac_point*Rotation2g;
+	Jac_point = jtemp;
 
 }
 void jh_controller::part::SetPoint(Vector3d point_vector) {
@@ -260,7 +277,11 @@ void jh_controller::part::SetPoint(Vector3d point_vector) {
 	Jac_point.block(0, 0, 3, m_int->nv) = mj2eigen(jac_p_temp, 3, m_int->nv);
 	Jac_point.block(3, 0, 3, m_int->nv) = mj2eigen(jac_r_temp, 3, m_int->nv);
 
-	Jac_point = Jac_point*Rotation2g;
+	MatrixXd jtemp;
+	jtemp.setZero(6, m_int->nv);
+
+	jtemp = Jac_point*Rotation2g;
+	Jac_point = jtemp;
 }
 
 jh_controller::part::part() {

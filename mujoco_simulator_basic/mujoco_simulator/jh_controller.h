@@ -47,6 +47,8 @@ public:
 		MatrixXd Jac;
 
 		MatrixXd Jac_COM;
+		MatrixXd Jac_COM_p;
+		MatrixXd Jac_COM_r;
 
 		MatrixXd Jac_Contact;
 
@@ -128,7 +130,7 @@ private:
 	Vector3d desired_x;
 
 
-
+	bool initializer;
 
 
 
