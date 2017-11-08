@@ -169,6 +169,16 @@ private:
 */
 MatrixXd mj2eigen(mjtNum *mat_mj, int nrow, int ncol);
 
+
+/*! @Convert mujoco matrix to eigen matrix.
+*  mat_mj = mujoco matrix variable
+*  start_point = startaddress of mjtnum
+*  nrow = number of rows of mujoco matrix
+*  ncol = number of columns of mujoco matrix
+*  ncol = 1 if mat_mj is vector
+*/
+MatrixXd mj2eigen(mjtNum *num, int start_point, int nrow, int ncol);
+
 /*! @Allocate mjtNum and insert Eigen Matrix to mjtNum.
 *  mat = eigen matrix
 *  d = mujoco data d

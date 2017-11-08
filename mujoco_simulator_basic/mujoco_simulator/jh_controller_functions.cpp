@@ -11,6 +11,18 @@ MatrixXd mj2eigen(mjtNum *num, int nrow, int ncol) {
 	return res;
 }
 
+MatrixXd mj2eigen(mjtNum *num, int start_point, int nrow, int ncol) {
+	MatrixXd res;
+	res.resize(nrow, ncol);
+	for (int i = 0; i < nrow; i++) {
+		for (int j = 0; j < ncol; j++) {
+			res(i, j) = num[start_point*nrow*ncol + i*ncol + j];
+		}
+	}
+	return res;
+}
+
+
 mjtNum* eigen2mj(MatrixXd mat, mjData *d) {	
 	Index matsize = mat.size();
 	mjtNum *num = mj_stackAlloc(d, (int)matsize);
@@ -151,6 +163,10 @@ void jh_controller::part::refresh() {
 		}
 	}
 	
+
+
+
+
 	Quaterniond q;
 	q.w() = m_int->body_iquat[part_id * 4];
 	q.x() = m_int->body_iquat[part_id * 4 + 1];
@@ -286,3 +302,4 @@ void jh_controller::part::SetPoint(Vector3d point_vector) {
 
 jh_controller::part::part() {
 }
+

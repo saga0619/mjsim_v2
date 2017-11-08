@@ -4480,3 +4480,81 @@ WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time 
 Tue Nov  7 16:53:09 2017
 WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 0.7880.
 
+Tue Nov  7 18:07:45 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.0810.
+
+Tue Nov  7 18:26:57 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.0810.
+
+Tue Nov  7 20:41:17 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 5. The simulation is unstable. Time = 0.0020.
+
+Tue Nov  7 20:42:28 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 21. The simulation is unstable. Time = 3.9630.
+
+Wed Nov  8 12:30:16 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 3. The simulation is unstable. Time = 36.5270.
+
+Wed Nov  8 12:33:17 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 25.6070.
+
+Wed Nov  8 12:33:17 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 3. The simulation is unstable. Time = 25.6070.
+
+Wed Nov  8 12:39:32 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 25.4650.
+
+Wed Nov  8 12:39:32 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 25.4650.
+
+Wed Nov  8 14:10:59 2017
+WARNING: Pre-allocated contact buffer is full. Increase nconmax above 100. Time = 14.4580.
+
+Wed Nov  8 14:10:59 2017
+WARNING: Nan, Inf or huge value in QACC at DOF 23. The simulation is unstable. Time = 14.4580.
+
+Wed Nov  8 17:19:45 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:20:02 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:49 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:49 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:49 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:50 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:50 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:50 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:50 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:50 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:51 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:51 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:54 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:56 2017
+WARNING: Unknown warning type Time = 0.0010.
+
+Wed Nov  8 17:22:57 2017
+WARNING: Unknown warning type Time = 0.0010.
+
